@@ -1,0 +1,16 @@
+<h1>Search the Library</h1>
+
+<%= form_tag '/do_search' do %>
+
+  <%= label_tag(:author_search_text, "Please enter author information:") %>
+  <%= text_field_tag(:author_search_text) %>
+
+  <%= label_tag(:author_search_text, "Please enter title information:") %>
+  <%= text_field_tag(:title_search_text) %>
+
+  <%= submit_tag("Search") %>
+
+<% end %>
+
+
+<%= link_to 'Back', books_path %>

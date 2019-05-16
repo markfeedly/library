@@ -61,6 +61,16 @@ class BooksController < ApplicationController
     end
   end
 
+  # book search
+  #
+  def search_books
+    render :search_books
+  end
+
+  def do_search
+    xxxx
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_book
