@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_15_230455) do
+ActiveRecord::Schema.define(version: 2019_05_16_092404) do
 
   create_table "books", force: :cascade do |t|
     t.text "author"
-    t.text "name"
+    t.text "title"
     t.text "genre"
     t.integer "ownRating"
     t.text "googleId"
