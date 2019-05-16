@@ -1,7 +1,7 @@
 # README
 
-A rails implemnetation of a little example
-adminstering a library of books.
+A Rails webapp that 
+ tracks and reveals information about books in a personal library.
 
 
 * Rails 5.2 Ruby 2.6.3
