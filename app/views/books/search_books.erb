@@ -1,5 +1,7 @@
 <h1>Search the Library</h1>
 
+<p>Fill in one or more search criteria:</p>
+
 <%= form_tag '/do_search' do %>
 
   <%= label_tag(:author_search_text, "Please enter author information:") %>
@@ -7,6 +9,11 @@
 
   <%= label_tag(:author_search_text, "Please enter title information:") %>
   <%= text_field_tag(:title_search_text) %>
+
+  <%= label_tag(:genre_search_text, "Please enter genre information:") %>
+  <%= text_field_tag(:genre_search_text) %>
+
+  <br>
 
   <%= submit_tag("Search") %>
 

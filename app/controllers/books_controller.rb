@@ -70,7 +70,8 @@ class BooksController < ApplicationController
   def do_search
     @author = params[:author_search_text]
     @title  = params[:title_search_text]
-    @books  = Book.search_author_title(@author, @title)
+    @genre  = params[:genre_search_text]
+    @books  = Book.search_author_title(@author, @title, @genre)
   end
 
   private
