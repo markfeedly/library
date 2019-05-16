@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30dbfd2f-2a6a-4b5b-a10f-a11d0c2f9542" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/books_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/books_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/book.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/book.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/books/do_search.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/do_search.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/books/search_books.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/books/search_books.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,7 +41,7 @@
       <file leaf-file-name="books_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="793">
               <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
             </state>
           </provider>
@@ -59,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_books.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search_books.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/books/search_books.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -77,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="book.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/book.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="90">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -119,8 +116,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/books/do_search.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/books_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/book.rb" />
         <option value="$PROJECT_DIR$/app/views/books/search_books.erb" />
+        <option value="$PROJECT_DIR$/app/models/book.rb" />
       </list>
     </option>
   </component>
@@ -350,12 +347,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557963334616</updated>
       <workItem from="1557963336086" duration="1291000" />
-      <workItem from="1557965136740" duration="8202000" />
+      <workItem from="1557965136740" duration="8493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9493000" />
+    <option name="totallyTimeSpent" value="9784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-244" y="-1050" width="1723" height="985" extended-state="0" />
@@ -492,20 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/book.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/do_search.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -515,8 +498,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/books/search_books.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/books_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="73" column="62" selection-start-line="73" selection-start-column="62" selection-end-line="73" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/book.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>

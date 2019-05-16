@@ -4,13 +4,13 @@ class Book < ApplicationRecord
     books = Book.all # whoa! bad practice but easy to do
 
     if author != ""
-      books = Book.where(author: author)
+      books = Book.where("author LIKE ?", "%#{author}%")
     end
     if title != ""
-      books = books.where(title: title)
+      books = books.where("title LIKE ?", "%#{title}%")
     end
     if genre != ""
-      books = books.where(genre: genre)
+      books = books.where("genre LIKE ?", "%#{genre}%")
     end
     books
   end
