@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails implemnetation of a little example
+adminstering a library of books.
 
-Things you may want to cover:
 
-* Ruby version
+* Rails 5.2 Ruby 2.6.3
 
-* System dependencies
+* Deploy as a rails app after installing the versions above
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* See, eg, [OSX install instructions for Rails](https://ryanbigg.com/2014/10/ubuntu-ruby-ruby-install-chruby-and-you)
