@@ -48,6 +48,8 @@ GEM
       io-like (~> 0.3.0)
     arel (9.0.0)
     bindex (0.7.0)
+    boogle (0.1.1)
+      faraday
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     builder (3.2.3)
@@ -78,6 +80,8 @@ GEM
     crass (1.0.4)
     erubi (1.8.0)
     execjs (2.7.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     ffi (1.10.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -103,6 +107,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.2.10)
+    multipart-post (2.1.1)
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
@@ -200,6 +205,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  boogle
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)

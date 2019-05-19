@@ -25,5 +25,12 @@
   <%= @book.googleId %>
 </p>
 
+<% if volume = @book.find_details %>
+     <p>
+         Published date: <%= volume.volume_info['publishedDate'] %>
+     </p>
+<% end %>
+
+
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
