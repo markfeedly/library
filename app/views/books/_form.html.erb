@@ -1,42 +1,62 @@
-<%= form_with(model: book, local: true) do |form| %>
-  <% if book.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+<%= form_for @book, :html => { :class => "form-horizontal book" } do |f| %>
 
-      <ul>
-      <% book.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <% if @book.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @book.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_area :author %>
+  <div class="form-group">
+    <%= f.label :author, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :author, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:author) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :title, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :title, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:title) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :genre, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :genre, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:genre) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :ownRating, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :ownRating, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:ownRating) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :googleId, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :googleId, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:googleId) %>
   </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_area :title %>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                books_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :genre %>
-    <%= form.text_area :genre %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ownRating %>
-    <%= form.number_field :ownRating %>
-  </div>
-
-  <div class="field">
-    <%= form.label :googleId %>
-    <%= form.text_area :googleId %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
