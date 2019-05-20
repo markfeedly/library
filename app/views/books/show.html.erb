@@ -26,9 +26,18 @@
 </p>
 
 <% if volume = @book.find_details %>
-     <p>
-         Published date: <%= volume.volume_info['publishedDate'] %>
-     </p>
+  <p>
+    Published date: <%= volume.volume_info['publishedDate'] %>
+  </p>
+  <p>
+    Page couunt: <%= volume.volume_info['pageCount'] %>
+  </p>
+  <p>
+    Description: <%= volume.volume_info['description'] %>
+  </p>
+
+
+
 <% end %>
 
 
