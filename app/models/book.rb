@@ -22,7 +22,6 @@ class Book < ApplicationRecord
     if googleId == ""
       googID = get_google_id()
       if googID != ""
-        puts googID + ' <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
         self.googleId = googID
         self.save()
       end
@@ -49,10 +48,8 @@ class Book < ApplicationRecord
     j = JSON.parse response.body
     j['items'].each do |item|
       vol = boogle.volume.find(id: item['id'])
-      puts "find for #{item['id']}" +'============================='
       if vol.title == title and vol.authors.include? author
         id = item['id']
-        puts id + '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
         break
       end
     end
