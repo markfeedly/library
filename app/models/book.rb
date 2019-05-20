@@ -19,11 +19,44 @@ class Book < ApplicationRecord
 
   def find_details()
     volume = nil
+    if googleId == ""
+      googID = get_google_id()
+      if googID != ""
+        puts googID + ' <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+        self.googleId = googID
+        self.save()
+      end
+    end
     if googleId != ""
       boogle = Boogle::Client.new(key: Rails.application.credentials.google[:key])
       volume = boogle.volume.find(id: googleId)
     end
     return volume
+  end
+
+  def safe_spaces(str)
+    chars = str.split ''
+    out = ""
+    chars.each { |ch| ch == ' '? out += '\\ ': out += ch }
+    out
+  end
+
+  def get_google_id()
+    boogle = Boogle::Client.new(key: Rails.application.credentials.google[:key])
+    id = ""
+    url = 'https://www.googleapis.com/books/v1/volumes?q='+title+'+inauthor='+author
+    response = Faraday.get url
+    j = JSON.parse response.body
+    j['items'].each do |item|
+      vol = boogle.volume.find(id: item['id'])
+      puts "find for #{item['id']}" +'============================='
+      if vol.title == title and vol.authors.include? author
+        id = item['id']
+        puts id + '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
+        break
+      end
+    end
+    id
   end
 
 end
